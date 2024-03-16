@@ -56,9 +56,8 @@ Congratulations, you have successfully setup the app!
 From the main index.html page you should be able to complete the following operations in their respective tabs: 
 1. View a table of all the current students
 2. Create a student
-3. Update a student's email by entering their current email and new email
-4. Update a student's email by entering their student id and new email
-5. Delete a student by entering their id
+3. Update a student's email by entering their student id and new email
+4. Delete a student by entering their id
 
 ## Video Demonstration
 Visit https://youtu.be/AR5-y8znDaY for the full demonstration and code walkthrough.
