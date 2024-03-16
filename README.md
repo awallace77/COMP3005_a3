@@ -6,11 +6,10 @@ March 16th, 2024
 Implement a PostgreSQL database using the provided schema and write an application in your language of choice that connects to this database to perform specific CRUD (Create, Read, Update, Delete) operations.The purpose of this assignment is to create.
 
 ## Overview
-This program is built using express, node.js, and PostgreSQL client. The front end is simple vanilla JavaScript, HTML, and CSS.
-a custom API was created with express so that the client can make HTTP requests to the database. Upon launching the server and visiting the page, you will be presented with an accordion drop down of the various operations you can do on the database. This includes: 
+This program is built using express, node.js, and PostgreSQL client. The front end is simple vanilla JavaScript, HTML, and CSS. <br/>
+A custom API was created with express so that the client can make HTTP requests to interact with the database. Upon launching the server and visiting the page, you will be presented with an accordion drop down of the various operations you can do on the database. This includes: 
 - Getting all students
 - Creating a new student
-- Updating a student based on their email
 - Updating a student based on their id
 - Deleting a student based on their id
 
