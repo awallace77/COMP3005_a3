@@ -1,0 +1,22 @@
+const STUDENTS_TABLE = 'students';
+const TRAINER_TABLE = 'trainer';
+
+
+/* SQL Statements */ 
+let CRUD = {
+  GET_ALL_STUDENTS: `SELECT * FROM ${STUDENTS_TABLE}`,
+
+  CREATE_STUDENT: `INSERT INTO ${STUDENTS_TABLE} (first_name, last_name, email, enrollment_date) VALUES ($1, $2, $3, $4) RETURNING *`,
+
+  GET_STUDENT: `SELECT * FROM ${STUDENTS_TABLE} WHERE ${STUDENTS_TABLE}.student_id = $1`,
+
+  GET_STUDENT_BY_EMAIL: `SELECT * FROM ${STUDENTS_TABLE} WHERE ${STUDENTS_TABLE}.email = $1`,
+  
+  UPDATE_STUDENT: `UPDATE ${STUDENTS_TABLE} SET email = $1 WHERE ${STUDENTS_TABLE}.email = $2 RETURNING *`,
+
+  UPDATE_STUDENT_BY_ID: `UPDATE ${STUDENTS_TABLE} SET email = $1 WHERE ${STUDENTS_TABLE}.student_id = $2 RETURNING *`,
+
+  DELETE_STUDENT: `DELETE FROM ${STUDENTS_TABLE} WHERE ${STUDENTS_TABLE}.student_id = $1 RETURNING *`,
+}
+
+module.exports = CRUD;
